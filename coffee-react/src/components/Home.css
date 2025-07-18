@@ -1,0 +1,264 @@
+body {
+    background-color: #493737;
+    color: #fff;
+    margin: 0;
+    font-family: 'Neuton', serif;
+}
+
+header,
+nav {
+    background-color: #0c0c0c;
+    color: #e4e7d3;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a:link,
+a {
+    color: beige;
+}
+
+.info {
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+/* .img2 {
+    background-image: url("../../public/img2.gif");
+} */
+
+img1 {
+    flex: 1;
+    text-align: right;
+}
+
+img {
+    max-width: 15%;
+    height: auto;
+}
+
+section {
+    padding: 1em;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    width: 300px;
+    margin: 4.5em;
+    padding: 1em;
+    background-color: #f1f1ef;
+    color: #25844e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(29, 81, 39, 0.987);
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 4px;
+    width: 300px;
+    height: 410px;
+}
+
+/*.product-image {
+            max-width: 100%;
+            border-radius: 4px;
+        }*/
+.buy-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #182d18;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #262222;
+    background-color: #332525;
+    color: #e7dcdc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #262222;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.MerchBrews {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.merch,
+.Brews {
+    background-color: #301e1e;
+    border: 1px solid #140c0c;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #271d1d;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.video-section,
+.audio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-container,
+.audio-container {
+    /*background-color: #362828;*/
+    flex-basis: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+video {
+    border: 1px solid #140c0c;
+}
+
+.Story {
+    background-color: #493737;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.Story {
+    background-color: rgba(73, 55, 55, 0.7);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.Story::before {
+    content: '';
+    background-image: url("../../public/img/bgi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#coffee-story {
+    display: none;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#navigation {
+    padding: 10px 0;
+}
+
+#navigation nav a {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#navigation nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    /*padding: 1em;*/
+    padding: 20px;
+    text-align: center;
+}
+
+footer li {
+    background-color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+/*.social-media-icons li {
+            display: inline-block;
+            margin-right: 2px;
+        }*/
+/*.social-media-icons img{
+            width: 24px;
+            height: 24px;
+        }*/
