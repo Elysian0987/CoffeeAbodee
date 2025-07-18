@@ -48,7 +48,7 @@ function Home() {
       <div className="Story">
         <h2>Our Coffee Story</h2>
         <p>Learn about our journey, commitment to quality...</p>
-        <a href="#" id="read-our-story-btn" className="read-more-btn">Read Our Story</a>
+        <a href="/" id="read-our-story-btn" className="read-more-btn">Read Our Story</a>
         <div id="coffee-story">
           <p>An Exotic Journey through Coffee...</p>
           {/* story paragraphs truncated for brevity */}
