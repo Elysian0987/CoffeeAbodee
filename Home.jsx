@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.css';
-import Info from './Info';
-import SignatureDrinks from './SignatureDrinks';
-import MerchAndBrews from './MerchAndBrews';
-import Footer from './Footer'; 
+import Info from './coffee-react/src/components/Info';
+import SignatureDrinks from './coffee-react/src/components/SignatureDrinks';
+import MerchAndBrews from './coffee-react/src/components/MerchAndBrews';
+import Footer from './coffee-react/src/components/Footer'; 
 
 function Home() {
   return (

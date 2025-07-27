@@ -1,5 +1,5 @@
 import React from "react";
-import "./form.css";
+import "../components/form.css"; // Assuming you have a CSS file for styling
 
 const Login = () => {
   return (

@@ -1,9 +1,6 @@
 import React from 'react';
-// Assuming Home.css will stay in the same folder as Home.jsx (i.e., in 'pages')
-import './Home.css';
+import '../components/Home.css';
 
-// IMPORTS: Update these paths because Home.jsx is now in 'pages',
-// so it needs to go up one level (..) to 'src' and then down into 'components'
 import Info from '../components/Info';
 import SignatureDrinks from '../components/SignatureDrinks';
 import MerchAndBrews from '../components/MerchAndBrews';
