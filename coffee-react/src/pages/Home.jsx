@@ -28,7 +28,7 @@ function Home() {
 
       <MerchAndBrews />
 
-      <Video />
+      <Video /> 
 
       <Story />
       
