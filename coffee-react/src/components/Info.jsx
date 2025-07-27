@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'; // Or create Info.css if you modularize later
+import './Home.css'; 
 
 function Info() {
   return (
