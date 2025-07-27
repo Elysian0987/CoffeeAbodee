@@ -15,6 +15,7 @@ function Home() {
         <img src={process.env.PUBLIC_URL + '/img/LOGO.png'} alt="Logo" />
         <h1>Coffee Abode</h1>
       </header>
+
       <nav>
         <a href="/">Home</a> |
         <a href="/menu">Menu</a> |
@@ -31,7 +32,7 @@ function Home() {
       <Video />
 
       <Story />
-      
+
       <Footer/>
     </>
   );

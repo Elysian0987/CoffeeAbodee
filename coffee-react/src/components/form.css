@@ -1,33 +1,51 @@
-body, h1, h2, h3, p, ul, li, form {
-    margin: 0;
-    padding: 0;
-}
+/* In your form.css file */
 
-body {
+/* Remove the direct 'body' rule for background here */
+/* body {
     font-family: 'Arial', sans-serif;
     background: url("../../public/img/Coffee7.jpg") no-repeat center center fixed;
-    background-color: #382824; 
-    color: #dcd5d4; 
-    background-size: cover; 
+    background-color: #382824;
+    color: #dcd5d4;
+    background-size: cover;
+} */
+
+/* Add a new rule specifically for the login background */
+.login-body-bg {
+    background: url("../../public/img/Coffee7.jpg") no-repeat center center fixed;
+    background-color: #382824;
+    background-size: cover;
 }
 
+/* Keep other body-related styles if they are truly global and desired */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #dcd5d4; /* This will be global if you want it to be */
+}
+
+
 header {
-    background-color: #1c1614; 
-    color: #dcd5d4; 
+    background-color: #1c1614;
+    color: #dcd5d4;
     padding: 10px;
     text-align: center;
 }
 
 form {
-    /* background-color: #121211;  */
-    background: rgba(18, 18, 17, 0.8); 
+    background: rgba(18, 18, 17, 0.8);
     padding: 20px;
     margin: 20px auto;
     max-width: 650px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    /* background: transparent; */
 }
+
+/* ... (rest of your form.css styles) ... */
+/* body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+} */
+
+
 
 h2 {
     color: #b7a8a3; 
