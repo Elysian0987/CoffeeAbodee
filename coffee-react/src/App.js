@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Merch from './pages/Merch';
+import Menu from './pages/Menu';
 import Login from './pages/Login';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         {/* <Route path="/login" element={<Login />} />  */}
         <Route path="/merch" element={<Merch />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
     </Router>
   );
