@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 function Home() {
   return (
     <>
-      <header>
+      <header id="header">
         <img src={process.env.PUBLIC_URL + '/img/LOGO.png'} alt="Logo" />
         <h1>Coffee Abode</h1>
       </header>

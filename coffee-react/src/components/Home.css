@@ -1,3 +1,9 @@
+#header{
+    background-color: #0c0c0c;
+    color: #e4e7d3;
+    padding: 1em;
+    text-align: center;
+}
 body {
     /* background-color: #493737; */
     background-color: #1C1614;
@@ -6,11 +12,7 @@ body {
     font-family: 'Neuton', serif;
 }
 
-header{
-    background-color: #0c0c0c;
-}
-
-header,nav {
+nav {
     background-color: #0c0c0c;
     color: #e4e7d3;
     padding: 1em;
