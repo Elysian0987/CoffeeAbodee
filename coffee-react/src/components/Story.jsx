@@ -33,7 +33,7 @@ function Story() {
 
       {/* Full story content, conditionally rendered */}
       {showFullStory && (
-        <div id="coffee-story" className="space-y-4 animate-fade-in text-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 max-w-4xl w-full"> {/* Adjusted responsive padding */}
+        <div id="coffee-story" className="glass-content space-y-4 animate-fade-in text-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 max-w-4xl w-full"> {/* Adjusted responsive padding */}
           <p className="font-semibold text-lg">An Exotic Journey through Coffee...</p>
           <p>Once upon a time, in a lush green valley nestled amidst misty mountains, there existed a mystical coffee plantation known as Coffee Abode. Legends spoke of its magical beans, rumored to possess the power to transport anyone who tasted them to distant lands.</p>
           <p>Those who ventured into the depths of Coffee Abode were greeted by the aroma of freshly roasted coffee, swirling like wisps of enchantment through the air. Each sip of the brew whispered tales of far-off lands, of sun-kissed fields where coffee cherries ripened under the watchful gaze of ancient trees.</p>
@@ -107,6 +107,17 @@ function Story() {
         }
         .glass-button:hover {
           background-color: rgba(255, 255, 255, 0.25); /* Slightly more opaque on hover */
+        }
+
+        /* Glass effect for expanded content */
+        .glass-content {
+          background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+          backdrop-filter: blur(15px); /* Strong glass effect */
+          -webkit-backdrop-filter: blur(15px); /* Safari compatibility */
+          border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+          border-radius: 20px; /* Rounded corners */
+          padding: 2rem; /* Internal padding for content */
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Subtle shadow */
         }
 
         /* Animation for fade-in effect */
