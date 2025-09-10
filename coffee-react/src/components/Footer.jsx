@@ -51,7 +51,7 @@ function Footer() {
       <hr />
       <br />
       <div className="footer-bottom">
-        &copy; 2024 Coffee Abode. All rights reserved. | Designed by <a href="https://www.example.com">Samrudhi B</a>
+        &copy; 2024 Coffee Abode. All rights reserved. | Designed with ♡ by <a href="https://samrudhib-portfolio.web.app/">Samrudhi B</a>
       </div>
     </footer>
   );
