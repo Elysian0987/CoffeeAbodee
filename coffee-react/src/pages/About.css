@@ -1,0 +1,182 @@
+/* About Page Styles */
+
+.about-container {
+    background-color: #493737;
+    color: #fff;
+    font-family: 'Neuton', serif;
+}
+
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../public/img/Coffee.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #e4e7d3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e4e7d3;
+    border-bottom: 3px solid #25844e;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #dcd5d4;
+}
+
+.about-image-placeholder {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image-placeholder img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.about-image-placeholder img:hover {
+    transform: scale(1.02);
+}
+
+.about-values {
+    background-color: #332525;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.about-values h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #e4e7d3;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background-color: #493737;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(37, 132, 78, 0.4);
+}
+
+.value-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #25844e;
+}
+
+.value-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #dcd5d4;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .about-section,
+    .about-section.reverse {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-image-placeholder {
+        max-width: 100%;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .about-content h2 {
+        font-size: 2em;
+    }
+
+    .about-values {
+        padding: 40px 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 60px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .about-content h2 {
+        font-size: 1.8em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+}

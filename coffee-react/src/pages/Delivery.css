@@ -1,0 +1,391 @@
+/* Delivery Page Styles */
+
+.delivery-container {
+    background-color: #493737;
+    color: #fff;
+    font-family: 'Neuton', serif;
+}
+
+.delivery-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../public/img/Coffee6.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.delivery-hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.delivery-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.delivery-section.alt-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.delivery-section h2 {
+    font-size: 2.5em;
+    color: #e4e7d3;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 3px solid #25844e;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Delivery Steps */
+.delivery-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.delivery-step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.step-circle {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #25844e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.delivery-step h3 {
+    font-size: 1.6em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.delivery-step p {
+    color: #dcd5d4;
+    line-height: 1.6;
+}
+
+.step-arrow {
+    font-size: 2em;
+    color: #25844e;
+    flex-shrink: 0;
+}
+
+/* Info Cards */
+.delivery-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background-color: #332525;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.info-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-size: 1.8em;
+    color: #e4e7d3;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #dcd5d4;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.info-detail {
+    font-size: 0.95em;
+    color: #b7a8a3;
+}
+
+.check-btn {
+    padding: 10px 25px;
+    background-color: #25844e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.check-btn:hover {
+    background-color: #1e6a3e;
+}
+
+/* Timing List */
+.timing-list {
+    margin-top: 15px;
+}
+
+.timing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(228, 231, 211, 0.2);
+    color: #dcd5d4;
+}
+
+.timing-row:last-child {
+    border-bottom: none;
+}
+
+/* Pricing Table */
+.pricing-table {
+    margin-top: 15px;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    color: #dcd5d4;
+}
+
+.pricing-row.highlight {
+    background-color: #25844e;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: #e4e7d3;
+}
+
+/* Safety Features */
+.safety-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.safety-card {
+    background-color: #332525;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.safety-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(37, 132, 78, 0.3);
+}
+
+.safety-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.safety-card h3 {
+    font-size: 1.4em;
+    color: #e4e7d3;
+    margin-bottom: 12px;
+}
+
+.safety-card p {
+    color: #dcd5d4;
+    line-height: 1.7;
+}
+
+/* Tracking Info */
+.tracking-info {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tracking-intro {
+    text-align: center;
+    font-size: 1.2em;
+    color: #dcd5d4;
+    margin-bottom: 40px;
+}
+
+.tracking-stages {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stage {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+    background-color: #332525;
+    border-radius: 10px;
+}
+
+.stage-icon {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stage h4 {
+    font-size: 1.2em;
+    color: #25844e;
+    margin-bottom: 8px;
+}
+
+.stage p {
+    font-size: 0.9em;
+    color: #b7a8a3;
+}
+
+/* Policies */
+.policies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.policy-item {
+    background-color: #332525;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #25844e;
+}
+
+.policy-item h3 {
+    font-size: 1.4em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.policy-item p {
+    color: #dcd5d4;
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #332525 0%, #493737 100%);
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    color: #e4e7d3;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    color: #dcd5d4;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.cta-btn.primary {
+    background-color: #25844e;
+    color: #fff;
+}
+
+.cta-btn.primary:hover {
+    background-color: #1e6a3e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 132, 78, 0.4);
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    color: #25844e;
+    border: 2px solid #25844e;
+}
+
+.cta-btn.secondary:hover {
+    background-color: #25844e;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .delivery-hero h1 {
+        font-size: 2em;
+    }
+
+    .delivery-section {
+        padding: 40px 20px;
+    }
+
+    .delivery-steps {
+        flex-direction: column;
+    }
+
+    .step-arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+
+    .delivery-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .safety-features {
+        grid-template-columns: 1fr;
+    }
+
+    .tracking-stages {
+        flex-direction: column;
+    }
+
+    .policies {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

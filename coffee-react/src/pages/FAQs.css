@@ -1,0 +1,229 @@
+/* FAQs Page Styles */
+
+.faqs-container {
+    background-color: #493737;
+    color: #fff;
+    font-family: 'Neuton', serif;
+}
+
+.faqs-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../public/img/Coffee2.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.faqs-hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.faqs-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.faqs-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faqs-intro p {
+    font-size: 1.2em;
+    color: #dcd5d4;
+    line-height: 1.8;
+}
+
+/* FAQ Categories */
+.faq-category {
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-size: 2em;
+    color: #e4e7d3;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #25844e;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* FAQ Items */
+.faq-item {
+    background-color: #332525;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(37, 132, 78, 0.2);
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(37, 132, 78, 0.5);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px 25px;
+    background-color: transparent;
+    border: none;
+    color: #e4e7d3;
+    font-size: 1.2em;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    transition: background-color 0.3s ease;
+    font-family: 'Neuton', serif;
+}
+
+.faq-question:hover {
+    background-color: rgba(37, 132, 78, 0.1);
+}
+
+.faq-question.active {
+    background-color: rgba(37, 132, 78, 0.15);
+    color: #25844e;
+}
+
+.faq-icon {
+    font-size: 1.5em;
+    color: #25844e;
+    font-weight: bold;
+    flex-shrink: 0;
+    width: 30px;
+    text-align: center;
+}
+
+.faq-answer {
+    padding: 0 25px 20px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-answer p {
+    color: #dcd5d4;
+    line-height: 1.8;
+    font-size: 1.05em;
+    margin: 0;
+}
+
+/* Contact Support Section */
+.contact-support {
+    background: linear-gradient(135deg, #332525 0%, #493737 100%);
+    padding: 60px 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-support h2 {
+    font-size: 2.5em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.contact-support > p {
+    font-size: 1.2em;
+    color: #dcd5d4;
+    margin-bottom: 40px;
+}
+
+.support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.support-card {
+    background-color: #332525;
+    padding: 35px 25px;
+    border-radius: 12px;
+    border: 2px solid #25844e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 132, 78, 0.3);
+}
+
+.support-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.support-card h3 {
+    font-size: 1.6em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.support-card p {
+    color: #25844e;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.response-time {
+    color: #b7a8a3;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faqs-hero h1 {
+        font-size: 2em;
+    }
+
+    .faqs-section {
+        padding: 40px 20px;
+    }
+
+    .category-title {
+        font-size: 1.6em;
+    }
+
+    .faq-question {
+        padding: 15px 20px;
+        font-size: 1.1em;
+    }
+
+    .faq-answer {
+        padding: 0 20px 15px;
+    }
+
+    .contact-support {
+        padding: 40px 20px;
+    }
+
+    .contact-support h2 {
+        font-size: 2em;
+    }
+
+    .support-options {
+        grid-template-columns: 1fr;
+    }
+}

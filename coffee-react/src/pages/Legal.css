@@ -1,0 +1,104 @@
+/* Legal Pages Styles */
+
+.legal-container {
+    background-color: #493737;
+    color: #fff;
+    font-family: 'Neuton', serif;
+}
+
+.legal-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../public/img/Coffee4.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.legal-hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.legal-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(228, 231, 211, 0.2);
+}
+
+.legal-section:last-of-type {
+    border-bottom: none;
+}
+
+.legal-section h2 {
+    font-size: 2.5em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #25844e;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.last-updated {
+    color: #b7a8a3;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+}
+
+.legal-content h3 {
+    font-size: 1.6em;
+    color: #25844e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.legal-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #dcd5d4;
+    margin-bottom: 15px;
+}
+
+.legal-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.legal-content ul li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #dcd5d4;
+    margin-bottom: 10px;
+    background-color: transparent;
+    padding: 5px 0;
+}
+
+.legal-content strong {
+    color: #25844e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .legal-hero h1 {
+        font-size: 2em;
+    }
+
+    .legal-section {
+        padding: 40px 20px;
+    }
+
+    .legal-section h2 {
+        font-size: 2em;
+    }
+
+    .legal-content h3 {
+        font-size: 1.4em;
+    }
+
+    .legal-content p,
+    .legal-content ul li {
+        font-size: 1em;
+    }
+}

@@ -8,9 +8,9 @@ function Footer() {
         <div className="footer-column">
           <h3>About Us</h3>
           <ul>
-            <li><a href="/">Coffeehouse</a></li>
-            <li><a href="/">Our Company</a></li>
-            <li><a href="/">Our Heritage</a></li>
+            <li><a href="/about#coffeehouse">Coffeehouse</a></li>
+            <li><a href="/about#company">Our Company</a></li>
+            <li><a href="/about#heritage">Our Heritage</a></li>
           </ul>
         </div>
 
@@ -27,14 +27,14 @@ function Footer() {
         <div className="footer-column">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Privacy Policy</a></li>
-            <li><a href="/">CoffeeAbode Rewards Day Offer</a></li>
-            <li><a href="/">Delivery</a></li>
-            <li><a href="/">Season's Gifting</a></li>
-            <li><a href="/">Careers</a></li>
-            <li><a href="/">FAQs</a></li>
-            <li><a href="/">Terms and Conditions</a></li>
-            <li><a href="/">CoffeeAbode India Mobile App Terms of Use</a></li>
+            <li><a href="/privacy-terms#privacy">Privacy Policy</a></li>
+            <li><a href="/rewards#rewards-day">CoffeeAbode Rewards Day Offer</a></li>
+            <li><a href="/delivery">Delivery</a></li>
+            <li><a href="/rewards#gifting">Season's Gifting</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/privacy-terms#terms">Terms and Conditions</a></li>
+            <li><a href="/privacy-terms#app-terms">CoffeeAbode India Mobile App Terms of Use</a></li>
           </ul>
         </div>
 

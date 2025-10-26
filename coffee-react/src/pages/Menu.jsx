@@ -4,7 +4,6 @@ import MenuItems from '../components/MenuItems';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-// --- Navigation Component (reused from previous response) ---
 const Navigation = () => {
   return (
     <section id="navigation">

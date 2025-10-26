@@ -1,0 +1,471 @@
+/* Rewards & Gifting Page Styles */
+
+.rewards-container {
+    background-color: #493737;
+    color: #fff;
+    font-family: 'Neuton', serif;
+}
+
+.rewards-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../public/img/Coffee5.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.rewards-hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.rewards-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.rewards-section.alt-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rewards-section h2 {
+    font-size: 2.5em;
+    color: #e4e7d3;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #25844e;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.rewards-intro,
+.gifting-intro {
+    text-align: center;
+    font-size: 1.2em;
+    color: #dcd5d4;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reward Tiers */
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.reward-tier {
+    background-color: #332525;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reward-tier:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(37, 132, 78, 0.3);
+}
+
+.reward-tier.featured {
+    border: 2px solid #25844e;
+    box-shadow: 0 4px 20px rgba(37, 132, 78, 0.4);
+}
+
+.tier-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #25844e;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.tier-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.reward-tier h3 {
+    font-size: 1.8em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.tier-requirement {
+    color: #25844e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.reward-tier ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.reward-tier ul li {
+    color: #dcd5d4;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    background-color: transparent;
+}
+
+.reward-tier ul li:before {
+    content: "✓";
+    color: #25844e;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* How to Join */
+.how-to-join {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.how-to-join h3 {
+    font-size: 2em;
+    color: #e4e7d3;
+    margin-bottom: 30px;
+}
+
+.join-steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.step-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #25844e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.step h4 {
+    font-size: 1.4em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #dcd5d4;
+}
+
+/* Special Offer Card */
+.special-offer-card {
+    background: linear-gradient(135deg, #332525 0%, #493737 100%);
+    border: 2px solid #25844e;
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.offer-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #25844e;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.special-offer-card h3 {
+    font-size: 2.5em;
+    color: #e4e7d3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.offer-highlight {
+    text-align: center;
+    font-size: 1.3em;
+    color: #25844e;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.offer-details p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #dcd5d4;
+    margin-bottom: 20px;
+}
+
+.offer-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.feature-icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    margin: 0;
+    color: #dcd5d4;
+    font-size: 1em;
+}
+
+.offer-terms {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.offer-terms h4 {
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.offer-terms ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #b7a8a3;
+    font-size: 0.95em;
+}
+
+.offer-terms ul li {
+    margin-bottom: 5px;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Gifting Section */
+.gifting-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.gift-card {
+    background-color: #332525;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 132, 78, 0.3);
+}
+
+.gift-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gift-card h3 {
+    font-size: 1.6em;
+    color: #e4e7d3;
+    padding: 20px 20px 10px;
+}
+
+.gift-card p {
+    color: #dcd5d4;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.gift-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 20px 20px;
+}
+
+.gift-features span {
+    color: #25844e;
+    font-size: 0.95em;
+}
+
+.gift-btn,
+.corporate-btn {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 12px;
+    background-color: #25844e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gift-btn:hover,
+.corporate-btn:hover {
+    background-color: #1e6a3e;
+}
+
+/* Seasonal Offers */
+.seasonal-offers {
+    margin-top: 60px;
+}
+
+.seasonal-offers h3 {
+    font-size: 2em;
+    color: #e4e7d3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.seasonal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.seasonal-card {
+    background-color: #332525;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(37, 132, 78, 0.3);
+}
+
+.seasonal-card h4 {
+    font-size: 1.4em;
+    color: #e4e7d3;
+    margin-bottom: 10px;
+}
+
+.seasonal-card p {
+    color: #dcd5d4;
+    margin-bottom: 15px;
+}
+
+.season-period {
+    display: inline-block;
+    background-color: #25844e;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Corporate Gifting */
+.corporate-gifting {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #332525;
+    border-radius: 12px;
+    border-left: 5px solid #25844e;
+}
+
+.corporate-gifting h3 {
+    font-size: 2em;
+    color: #e4e7d3;
+    margin-bottom: 15px;
+}
+
+.corporate-gifting p {
+    color: #dcd5d4;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.corporate-gifting ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.corporate-gifting ul li {
+    color: #dcd5d4;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.corporate-gifting ul li:before {
+    content: "✓";
+    color: #25844e;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.corporate-btn {
+    width: auto;
+    margin: 0;
+    padding: 15px 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rewards-hero h1 {
+        font-size: 2em;
+    }
+
+    .rewards-section {
+        padding: 40px 20px;
+    }
+
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .special-offer-card {
+        padding: 30px 20px;
+    }
+
+    .offer-features {
+        grid-template-columns: 1fr;
+    }
+
+    .gifting-options {
+        grid-template-columns: 1fr;
+    }
+
+    .join-steps {
+        flex-direction: column;
+    }
+}
