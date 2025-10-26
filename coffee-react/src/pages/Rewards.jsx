@@ -28,7 +28,7 @@ const Rewards = () => {
 
           <div className="rewards-grid">
             <div className="reward-tier">
-              <div className="tier-icon">☕</div>
+              <div className="tier-icon">★</div>
               <h3>Bronze Member</h3>
               <p className="tier-requirement">0 - 499 Points</p>
               <ul>
@@ -41,7 +41,7 @@ const Rewards = () => {
 
             <div className="reward-tier featured">
               <div className="tier-badge">POPULAR</div>
-              <div className="tier-icon">🌟</div>
+              <div className="tier-icon">★★</div>
               <h3>Silver Member</h3>
               <p className="tier-requirement">500 - 1,999 Points</p>
               <ul>
@@ -54,7 +54,7 @@ const Rewards = () => {
             </div>
 
             <div className="reward-tier">
-              <div className="tier-icon">👑</div>
+              <div className="tier-icon">★★★</div>
               <h3>Gold Member</h3>
               <p className="tier-requirement">2,000+ Points</p>
               <ul>
@@ -107,19 +107,19 @@ const Rewards = () => {
               
               <div className="offer-features">
                 <div className="feature">
-                  <span className="feature-icon">2️⃣✖️</span>
+                  <span className="feature-icon">×2</span>
                   <p>Double points on all items</p>
                 </div>
                 <div className="feature">
-                  <span className="feature-icon">🎁</span>
+                  <span className="feature-icon">+</span>
                   <p>Surprise bonus rewards</p>
                 </div>
                 <div className="feature">
-                  <span className="feature-icon">⏰</span>
+                  <span className="feature-icon">24h</span>
                   <p>Valid all day Friday</p>
                 </div>
                 <div className="feature">
-                  <span className="feature-icon">📱</span>
+                  <span className="feature-icon">◆</span>
                   <p>In-store & app orders</p>
                 </div>
               </div>
