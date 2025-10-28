@@ -1,27 +1,200 @@
-#header{
+/* Header and Navigation Styles */
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0c0c0c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#header {
     background-color: #0c0c0c;
     color: #e4e7d3;
     padding: 1em;
     text-align: center;
 }
+
+#header .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#header .logo-link:hover {
+    opacity: 0.9;
+}
+
+#header img {
+    max-width: 80px;
+    height: auto;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e4e7d3;
+    font-weight: 600;
+}
+
+.main-nav {
+    background-color: #0c0c0c;
+    padding: 0.8em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(228, 231, 211, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #e4e7d3;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    background-color: rgba(37, 132, 78, 0.2);
+    color: #25844e;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #25844e;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e4e7d3;
+    text-decoration: none;
+    padding: 0.6em 1.2em;
+    background-color: #1a5c35;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: bold;
+}
+
+.cart-link:hover {
+    background-color: #134428;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 92, 53, 0.6);
+}
+
+.cart-icon {
+    font-size: 1.3em;
+}
+
+.cart-text {
+    font-size: 1em;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    border: 2px solid #0c0c0c;
+}
+
+/* Sub-Navigation Styling */
+#navigation {
+    background-color: #1a1a1a;
+    padding: 1em 2em;
+    border-bottom: 2px solid rgba(37, 132, 78, 0.3);
+}
+
+#navigation nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+#navigation nav a {
+    color: #e4e7d3;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em 1.2em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+#navigation nav a:hover {
+    background-color: rgba(37, 132, 78, 0.2);
+    color: #25844e;
+}
+
+/* Separator styling (the | symbol) */
+#navigation nav {
+    font-size: 1.1em;
+    color: rgba(228, 231, 211, 0.3);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 0.4em 0.8em;
+    }
+
+    #header h1 {
+        font-size: 1.5em;
+    }
+}
+
 body {
-    /* background-color: #493737; */
     background-color: #1C1614;
     color: #fff;
     margin: 0;
     font-family: 'Neuton', serif;
-}
-
-nav {
-    background-color: #0c0c0c;
-    color: #e4e7d3;
-    padding: 1em;
-    text-align: center;
-}
-
-nav a:link,
-a {
-    color: beige;
 }
 
 .info {
@@ -76,18 +249,91 @@ section {
     height: 410px;
 }
 
+.product-price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #25844e;
+}
+
+/* Product Buttons */
+.buy-button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #25844e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Neuton', serif;
+}
+
+.buy-button:hover {
+    background-color: #1e6a3e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 132, 78, 0.4);
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(37, 132, 78, 0.1);
+    border-radius: 6px;
+}
+
+.qty-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #25844e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn:hover {
+    background-color: #1e6a3e;
+    transform: scale(1.1);
+}
+
+.quantity-display {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #25844e;
+    min-width: 30px;
+    text-align: center;
+}
+
 .buy-btn {
     display: inline-block;
-    padding: 0.5em 1em;
-    background-color: #333;
+    padding: 0.7em 1.5em;
+    background-color: #25844e;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
 }
 
 .buy-btn:hover {
-    background-color: #182d18;
+    background-color: #1e6a3e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(37, 132, 78, 0.3);
 }
 
 table {
@@ -202,4 +448,26 @@ footer li {
 
 .footer-column ul li {
     margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #25844e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #1e6a3e;
+    text-decoration: underline;
+}
+
+.footer-bottom a {
+    color: #25844e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    color: #1e6a3e;
+    text-decoration: underline;
 }

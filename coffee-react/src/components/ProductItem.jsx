@@ -1,20 +1,29 @@
 import React, { useState } from 'react';
+import { useCart } from '../context/CartContext';
 
 const ProductItem = ({ imageSrc, altText, title, description, price }) => {
-  const [quantity, setQuantity] = useState(0); // State to manage the quantity of the item
+  const [quantity, setQuantity] = useState(0);
+  const { addToCart } = useCart();
 
   const handleBuyClick = () => {
-    setQuantity(1); // When "Buy" is clicked, set quantity to 1
+    setQuantity(1);
+    addToCart({ imageSrc, altText, title, description, price, quantity: 1 });
   };
 
   const handleDecrement = () => {
     if (quantity > 0) {
-      setQuantity(prevQuantity => prevQuantity - 1); // Decrement quantity
+      const newQuantity = quantity - 1;
+      setQuantity(newQuantity);
+      if (newQuantity > 0) {
+        addToCart({ imageSrc, altText, title, description, price, quantity: -1 });
+      }
     }
   };
 
   const handleIncrement = () => {
-    setQuantity(prevQuantity => prevQuantity + 1); // Increment quantity
+    const newQuantity = quantity + 1;
+    setQuantity(newQuantity);
+    addToCart({ imageSrc, altText, title, description, price, quantity: 1 });
   };
 
   return (
@@ -22,15 +31,15 @@ const ProductItem = ({ imageSrc, altText, title, description, price }) => {
       <img className="product-image" src={imageSrc} alt={altText} />
       <h3>{title}</h3>
       <p>{description}</p>
-      <p>{price}</p>
+      <p className="product-price">{price}</p>
       <div className="toggle-buy-btn">
-        {quantity === 0 ? ( // Conditionally render "Buy" button or quantity controls
-          <button onClick={handleBuyClick}>Buy</button>
+        {quantity === 0 ? (
+          <button className="buy-button" onClick={handleBuyClick}>Add to Cart</button>
         ) : (
-          <div>
-            <button onClick={handleDecrement}>-</button>
-            <span> {quantity} </span>
-            <button onClick={handleIncrement}>+</button>
+          <div className="quantity-controls">
+            <button className="qty-btn" onClick={handleDecrement}>−</button>
+            <span className="quantity-display">{quantity}</span>
+            <button className="qty-btn" onClick={handleIncrement}>+</button>
           </div>
         )}
       </div>
