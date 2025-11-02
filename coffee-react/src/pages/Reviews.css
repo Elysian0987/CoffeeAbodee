@@ -1,0 +1,165 @@
+/* Reviews Page */
+.reviews-page {
+    min-height: 100vh;
+    background-color: #1C1614;
+    padding: 3em 2em;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reviews-page-title {
+    color: #e4e7d3;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.reviews-subtitle {
+    color: rgba(228, 231, 211, 0.7);
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+/* Existing Reviews Section */
+.existing-reviews {
+    margin-top: 4em;
+}
+
+.existing-reviews-title {
+    color: #e4e7d3;
+    font-size: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.reviews-list {
+    display: grid;
+    gap: 2em;
+}
+
+/* Review Card */
+.review-card {
+    background-color: rgba(228, 231, 211, 0.05);
+    border: 1px solid rgba(228, 231, 211, 0.2);
+    border-radius: 8px;
+    padding: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(37, 132, 78, 0.2);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25844e;
+    color: #e4e7d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.author-info h4 {
+    color: #e4e7d3;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.review-date {
+    color: rgba(228, 231, 211, 0.5);
+    font-size: 0.9em;
+    margin: 0.3em 0 0 0;
+}
+
+.review-rating {
+    display: flex;
+    gap: 0.2em;
+}
+
+.review-star {
+    color: rgba(228, 231, 211, 0.3);
+    font-size: 1.3em;
+}
+
+.review-star.filled {
+    color: #ffd700;
+}
+
+.review-product {
+    color: #25844e;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 1em 0 0.5em 0;
+}
+
+.review-text {
+    color: rgba(228, 231, 211, 0.8);
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-page {
+        padding: 2em 1em;
+    }
+
+    .reviews-page-title {
+        font-size: 2em;
+    }
+
+    .reviews-subtitle {
+        font-size: 1em;
+    }
+
+    .existing-reviews-title {
+        font-size: 1.5em;
+    }
+
+    .review-card {
+        padding: 1.5em;
+    }
+
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .author-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .author-info h4 {
+        font-size: 1.1em;
+    }
+
+    .review-rating {
+        font-size: 0.9em;
+    }
+}

@@ -32,6 +32,7 @@ function Footer() {
             <li><a href="/delivery">Delivery</a></li>
             <li><a href="/rewards#gifting">Season's Gifting</a></li>
             <li><a href="/careers">Careers</a></li>
+            <li><a href="/reviews">Reviews</a></li>
             <li><a href="/faqs">FAQs</a></li>
             <li><a href="/privacy-terms#terms">Terms and Conditions</a></li>
             <li><a href="/privacy-terms#app-terms">CoffeeAbode India Mobile App Terms of Use</a></li>

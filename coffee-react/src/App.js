@@ -14,6 +14,7 @@ import Delivery from './pages/Delivery';
 import Careers from './pages/Careers';
 import FAQs from './pages/FAQs';
 import Cart from './pages/Cart';
+import Reviews from './pages/Reviews';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/merch" element={<Merch />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </Router>
     </CartProvider>
