@@ -22,11 +22,26 @@ function Header() {
           <Link to="/merch">Merchandise</Link>
           <Link to="/about">About</Link>
         </div>
-        <Link to="/cart" className="cart-link">
-          <span className="cart-icon">🛒</span>
-          <span className="cart-text">Cart</span>
-          {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-        </Link>
+        <div className="nav-right">
+          <div className="search-bar">
+            <input 
+              type="text" 
+              placeholder="Search..." 
+              className="search-input"
+            />
+            <button className="search-button">
+              <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8" strokeWidth="2"/>
+                <path d="M21 21l-4.35-4.35" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <Link to="/cart" className="cart-link">
+            <span className="cart-icon">🛒</span>
+            <span className="cart-text">Cart</span>
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+          </Link>
+        </div>
       </nav>
     </div>
   );
